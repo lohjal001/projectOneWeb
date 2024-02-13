@@ -1,0 +1,5 @@
+allFromStudents;SELECT ID,  FNamn, LNamn, Stad, Hobby FROM studenter ORDER BY ID ASC;gritacademy;localhost;4306;user;user
+allFromCourses; SELECT ID, Namn, YHP, Beskrivning FROM kurser ORDER BY ID ASC;gritacademy;localhost;4306;user;user
+allFromAttendance; select n.ID, s.FNamn, s.LNamn, k.Namn FROM närvaro n join studenter s on n.studentID = s.ID join kurser k on n.kursID = k.ID ORDER BY ID ASC;gritacademy;localhost;4306;user;user
+
+
